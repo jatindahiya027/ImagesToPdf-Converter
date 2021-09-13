@@ -28,7 +28,7 @@ for img in img_list:
 
 # Pdf will be save by the below code.
 with open("output.pdf", "wb") as f:
-    
+    #writing data to pdf
     f.write(img2pdf.convert(["temp/"+i for i in os.listdir('temp')]))
 
 # delete the images from the temp directory
